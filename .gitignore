@@ -1,0 +1,16 @@
+/.idea/
+/node_modules/
+/build/
+/dist/
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
