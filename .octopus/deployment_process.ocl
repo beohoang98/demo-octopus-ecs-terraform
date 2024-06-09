@@ -17,6 +17,7 @@ step "plan-to-apply-a-terraform-template" {
             Octopus.Action.Terraform.ManagedAccount = "AWS"
             Octopus.Action.Terraform.PlanJsonOutput = "False"
             Octopus.Action.Terraform.RunAutomaticFileSubstitution = "True"
+            Octopus.Action.Terraform.TemplateDirectory = "deploy"
             OctopusUseBundledTooling = "False"
         }
         worker_pool = "hosted-ubuntu"
