@@ -22,5 +22,10 @@ step "plan-to-apply-a-terraform-template" {
             OctopusUseBundledTooling = "False"
         }
         worker_pool = "hosted-ubuntu"
+
+        container {
+            feed = "dockerhub"
+            image = "octopuslabs/terraform-workertools:latest"
+        }
     }
 }
