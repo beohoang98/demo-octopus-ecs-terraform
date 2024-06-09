@@ -22,10 +22,5 @@ step "plan-to-apply-a-terraform-template" {
             OctopusUseBundledTooling = "False"
         }
         worker_pool = "hosted-ubuntu"
-
-        container {
-            feed = "dockerhub"
-            image = "hashicorp/terraform:1.8"
-        }
     }
 }
