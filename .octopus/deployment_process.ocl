@@ -6,7 +6,8 @@ step "plan-to-apply-a-terraform-template" {
         properties = {
             Octopus.Action.Aws.AssumeRole = "False"
             Octopus.Action.Aws.Region = "ap-southeast-1"
-            Octopus.Action.AwsAccount.UseInstanceRole = "True"
+            Octopus.Action.AwsAccount.UseInstanceRole = "False"
+            Octopus.Action.AwsAccount.Variable = "AWS Account"
             Octopus.Action.GitRepository.Source = "Project"
             Octopus.Action.GoogleCloud.ImpersonateServiceAccount = "False"
             Octopus.Action.GoogleCloud.UseVMServiceAccount = "True"
