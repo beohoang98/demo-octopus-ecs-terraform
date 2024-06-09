@@ -1,0 +1,7 @@
+variable "AWS Account" {
+    type = "AmazonWebServicesAccount"
+
+    value "beohoang98" {
+        environment = ["development"]
+    }
+}
